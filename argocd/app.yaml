@@ -8,7 +8,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/omegion/echo-k8s-app/
-    targetRevision: argocd-poc
+    targetRevision: HEAD
     path: kubernetes
     directory:
       recurse: true
