@@ -3,7 +3,8 @@ kind: Deployment
 metadata:
   name: echo-deployment
 spec:
-  replicas: 2
+  # This replica set is picking up from features/argocd-poc branch
+  replicas: 1
   selector:
     matchLabels:
       app: echo-server
