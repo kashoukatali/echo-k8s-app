@@ -3,11 +3,12 @@ kind: Application
 metadata:
   name: echo-server
   namespace: argocd
+# This is from argocd-poc branch.
 spec:
   project: default
   source:
     repoURL: https://github.com/omegion/echo-k8s-app/
-    targetRevision: HEAD
+    targetRevision: argocd-poc
     path: kubernetes
     directory:
       recurse: true
